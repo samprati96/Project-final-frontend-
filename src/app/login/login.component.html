@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <h3 style="text-align: center;">Login</h3>
+  
+  <form (ngSubmit)="login()">
+
+  <div>
+    <label for="role">Role</label>
+    <br>
+    <select name="role" id="role" [(ngModel)]="role">
+      <option value="ADMIN">Admin</option>
+      <option value="VENDOR">Vendor</option>
+      <option value="CUSTOMER">Customer</option>
+
+    </select >
+  </div>
+  <br>
+
+  <label for="email">Email</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email"  [(ngModel)]="username">
+    </div>
+    <br>
+    <label for="password">Password</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password"  [(ngModel)]="password">
+    </div>
+    <br>
+    
+    <button type="submit" class="btn btn-sm btn-success" >Login</button>
+    &nbsp;
+    <button type="button" class="btn btn-sm btn-danger">Cancel</button>
+    <br>
+    <br>
+<a routerLink="/register">New to fashzone?Create new account</a>
+    
+    
+  </form>
+  <br>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+
+
+<form action="" method="POST" role="form">
+        <legend style="text-align: center">Product Details</legend>
+    
+        <div>
+            <label for="productName">Product Name:</label>
+            <input readonly type="text" class="form-control" id="productName" name="productName" placeholder="productName" [(ngModel)]="product.productName">
+
+        </div><br>
+        <div>
+                <label for="category">Product category:</label>
+                <input readonly type="text" class="form-control" id="category" name="category" placeholder="category" [(ngModel)]="product.category">
+            </div><br>
+        <div>
+                <label for="description">Product description:</label>
+                <input readonly type="text" class="form-control" id="description" name="description" placeholder="description" [(ngModel)]="product.description">
+        </div><br>
+        <div>
+                <label for="mrp">Product price:</label>
+                <input readonly type="text" class="form-control" id="mrp" name="mrp" placeholder="mrp" [(ngModel)]="product.mrp">
+        </div><br>
+        
+        <!-- <button class="btn" type="button" id="plus">
+            <i class="icon-plus-sign">+</i>
+          </button>
+          <input type="text" value="0" id="items" name="items" style="width:25%">
+          <button class="btn" type="button" id="minus">
+            <i class="icon-minus-sign">-</i> 
+    
+        </button>--><br>
+       
+        <button type="button" class="btn btn-success" routerLink="/placeorder/{{productId}}">Place Order</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="button" class="btn btn-success"  (click)="InsertIntoCart()">Add To Cart</button>
+
+        
+  <br>     
+<br>
+
+
+
+<button type="button" class="btn btn-large btn-block btn-danger" routerLink="/home">Cancel</button>
+           
+    
+    </form>
+    

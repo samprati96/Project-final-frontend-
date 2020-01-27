@@ -1,0 +1,46 @@
+
+<a routerLink="/admin">Go Back</a>
+
+<form action="" method="POST" role="form">
+        <legend style="text-align: center">Customer List</legend>
+    
+            
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Status</th>
+                            <th>Password</th>
+                            <th>Role</th>
+                            <th>Username</th>
+                            <th>Address</th>
+
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let customer of customers">
+                            <td>{{customer.customerId}}</td>
+                            <td>{{customer.name}}</td>
+                            <td>{{customer.phone}}</td>
+                            <td>{{customer.status}}</td>
+                            <td>{{customer.password}}</td>
+                            <td>{{customer.role}}</td>
+                            <td>{{customer.username}}</td>
+                            <td>{{customer.address}}</td>
+
+    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+    
+        
+    
+    </form>
+    

@@ -1,0 +1,31 @@
+
+<a routerLink="/admin">Go Back</a>
+
+<form action="" method="POST" role="form">
+        <legend style="text-align: center">Profit And Loss</legend>
+    
+            
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Order No</th>
+                            <th>Profit/Loss</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let profitloss of pl">
+                            <td>{{profitloss.orderNo}}</td>
+                            <td>{{profitloss.profitOrLoss}}</td>                           
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+    
+        
+    
+    </form>
+    
+

@@ -1,0 +1,17 @@
+
+
+<form action="" method="POST" role="form">
+        <legend style="text-align: center">Payment Details</legend>
+    
+        <div class="form-group">
+            <label for="mrp">Payment Amount</label>
+            <input readonly type="text" class="form-control" id="mrp" name="mrp" placeholder="mrp" [(ngModel)]="product.mrp">
+
+        </div><br>
+    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-lg btn-success" (click)="Payment()" >Pay</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-lg btn-danger"  routerLink="/productdescription/{{product.productId}}" >Cancel</button>
+        
+        
+    </form>
+    

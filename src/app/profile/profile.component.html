@@ -1,0 +1,21 @@
+
+<form action="" method="POST" role="form">
+    <legend style="text-align: center">My Profile:</legend>
+
+    <div>
+            <span class="glyphicon glyphicon-user"></span>
+            &nbsp;
+            <label for="greeting">Hello, {{customer.name}}</label>
+    </div>
+    <div class="form-group">
+           + Account Settings  
+        <a routerLink="/personal-info"><ul><li>Edit Profile</li></ul></a>
+        <a (click)="Deactivate()"><ul><li>{{message}}</li></ul></a>
+
+        <br>
+        
+
+        <!-- + Orders
+        <a routerLink="/order"><ul><li>Order Details</li></ul></a> -->
+    </div>
+</form>

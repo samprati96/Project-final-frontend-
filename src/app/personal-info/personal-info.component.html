@@ -1,0 +1,27 @@
+
+<form (ngSubmit)="Update()" role="form">
+    <legend style="text-align: center">Personal Information</legend>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="name" [(ngModel)]="customer.name">
+    </div>
+ 
+    <div class="form-group">
+        <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Mobile Number" [(ngModel)]="customer.phone">
+    </div>
+
+    <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address" [(ngModel)]="customer.address">
+   </div>
+
+   
+   <button type="submit" class="btn btn-lg btn-success">Update</button>
+   
+    
+<br>
+
+  
+</form>

@@ -1,0 +1,37 @@
+
+<form (ngSubmit)="Insert()" role="form">
+    <legend style="text-align: center">Create Account</legend>
+
+    <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" [(ngModel)]="customer.name">
+    </div>
+
+    <div class="form-group">
+            <label for="phone">Mobile No:</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter mobile no." [(ngModel)]="customer.phone">
+    </div>
+
+    <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" [(ngModel)]="customer.username">
+    </div>
+
+    <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password"  [(ngModel)]="customer.password">
+    </div>
+
+    <div class="form-group">
+            <label for="cpassword">Confirm Password:</label>
+            <input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="Confirm password">
+    </div>
+
+    <div class="form-group">
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" style="width: 100%" [(ngModel)]="customer.address"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Register</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button  type="reset" class="btn btn-danger">Cancel</button>  
+</form>

@@ -1,0 +1,79 @@
+
+<a routerLink="/vendor">Go Back</a>
+
+<div class="form">
+        <form #formreg="ngForm" (ngSubmit)="InsertProduct(formreg)">
+    
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <legend >
+                            <label for="heading">Add Product Details</label>
+                    </legend>
+
+                    <div class="form-group">
+                        <label for="vendorId">Vendor Id</label>
+                        <input type="text" ngModel class="form-control" name="vendorId" id="vendorId"
+                            placeholder="Enter Vendor Id">
+                    </div>
+
+                    
+
+                    <div class="form-group">
+                        <label for="productName">Product Name</label>
+                        <input type="text" ngModel class="form-control" name="productName" id="productName"
+                            placeholder="Enter Product Name">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="category">Product category</label>
+                        <input type="text" ngModel class="form-control" name="category" id="category"
+                            placeholder="Enter product category">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Product description</label>
+                        <input type="text" ngModel class="form-control" name="description" id="description"
+                            placeholder="Enter product description">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="cp">Product Cost Price</label>
+                        <input type="text" ngModel class="form-control" name="cp" id="cp"
+                            placeholder="Enter product cost">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mrp">Product MRP</label>
+                        <input type="text" ngModel class="form-control" name="mrp" id="mrp"
+                            placeholder="Enter product mrp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Product quantity</label>
+                        <input type="text" ngModel class="form-control" name="quantity" id="quantity"
+                            placeholder="Enter product quantity">
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="Image">Image</label>
+                        <input (change)="onSelectFile($event)" type="file" ngModel class="form-control" name="image"
+                            id="Image">
+    
+                    </div>
+    
+         
+                    <button type="submit" class="btn btn-primary" name="cust">Add Product</button>
+                    <!-- <button (click)="onAdd()" class="btn btn-success">Add</button> -->
+    
+                    <button (click)="onCancel()" class="btn btn-danger" >Cancel</button>
+    
+                </div>
+            </div>
+    
+        </form>
+    
+    </div>
+
+    
